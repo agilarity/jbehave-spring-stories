@@ -33,7 +33,7 @@ import org.jbehave.core.annotations.Then;
 import org.jbehave.core.annotations.When;
 import org.springframework.stereotype.Component;
 
-import com.agilarity.examples.smoke.SafetyStatus;
+import com.agilarity.examples.smoke.domain.SafetyStatus;
 import com.agilarity.examples.smoke.domain.SmokeDetector;
 
 @Component

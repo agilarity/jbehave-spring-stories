@@ -24,11 +24,9 @@
 
 package com.agilarity.examples.smoke.domain;
 
-import static com.agilarity.examples.smoke.SafetyStatus.EMERGENCY;
-import static com.agilarity.examples.smoke.SafetyStatus.SAFE;
-import static com.agilarity.examples.smoke.SafetyStatus.WARNING;
-
-import com.agilarity.examples.smoke.SafetyStatus;
+import static com.agilarity.examples.smoke.domain.SafetyStatus.EMERGENCY;
+import static com.agilarity.examples.smoke.domain.SafetyStatus.SAFE;
+import static com.agilarity.examples.smoke.domain.SafetyStatus.WARNING;
 
 public class SmokeDetector {
 
