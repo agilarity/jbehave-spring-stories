@@ -4,7 +4,15 @@
 This project provides a useful base class for running [JBehave](http://jbehave.org/reference/stable/) test scenarios with injected steps using [Spring](http://spring.io/).
 
 ### Usage:
-1 - Add a Spring annotated resource class.
+1 - Add dependency.
+```xml
+<dependency>
+    <groupId>com.agilarity</groupId>
+    <artifactId>jbehave-spring-stories</artifactId>
+    <version>1.0.1</version>
+</dependency>
+```
+2 - Add a Spring annotated resource class.
 ```java
 @Configuration
 @ComponentScan("com.agilarity.examples.smoke.steps")
@@ -12,7 +20,7 @@ public class SmokeTestResources {
 
 }
 ```
-2 - Specify the resource in your test class.
+3 - Specify the resource in your test class.
 ```java
     public class SmokeTest extends SpringJBehaveStories {
     
@@ -22,6 +30,8 @@ public class SmokeTestResources {
         }
     }
 ```
-3 - Put your story files under <tt>src/test/resources</tt>, at or below the same package as your test class.
+4 - Add the <tt>@Component</tt> annotation to you steps so Spring will wire it up.
 
-4 - Run your test class as a normal [JUnit](http://junit.org/) test.
+5 - Put your story files under <tt>src/test/resources</tt>, at or below the same package as your test class.
+
+6 - Run your test class as a normal [JUnit](http://junit.org/) test.
