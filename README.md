@@ -1,3 +1,6 @@
+[![Stories in Ready](https://badge.waffle.io/agilarity/jbehave-spring-stories.png?label=ready&title=Ready)](https://waffle.io/agilarity/jbehave-spring-stories)
+[![Build Status](https://travis-ci.org/agilarity/jbehave-spring-stories.svg?branch=master)](https://travis-ci.org/agilarity/jbehave-spring-stories)
+
 This project provides a useful base class for running [JBehave](http://jbehave.org/reference/stable/) test scenarios with injected steps using [Spring](http://spring.io/).
 
 ### Usage:
