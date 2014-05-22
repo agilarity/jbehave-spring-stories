@@ -30,6 +30,7 @@ import org.jbehave.core.steps.spring.SpringStepsFactory;
 import org.springframework.context.ApplicationContext;
 
 import com.agilarity.jbehave.JBehaveStoriesBase;
+import com.google.java.contract.Ensures;
 
 public abstract class SpringJBehaveStories extends JBehaveStoriesBase {
 
@@ -43,5 +44,6 @@ public abstract class SpringJBehaveStories extends JBehaveStoriesBase {
                 .createApplicationContext();
     }
 
+    @Ensures("result != null")
     protected abstract String[] getSpringResources();
 }
