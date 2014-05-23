@@ -9,7 +9,7 @@ This project provides a useful base class for running [JBehave](http://jbehave.o
 <dependency>
     <groupId>com.agilarity</groupId>
     <artifactId>jbehave-spring-stories</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
 </dependency>
 ```
 2 - Add a Spring annotated resource class.
